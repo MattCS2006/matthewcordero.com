@@ -44,7 +44,7 @@
 
         $('#contact-form').on('submit', function (e) {
             if (!e.isDefaultPrevented()) {
-                var url = "contact_form/contact_form.php";
+                var url = "/";
 
                 $.ajax({
                     type: "POST",

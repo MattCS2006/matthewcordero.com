@@ -52,6 +52,11 @@
                     data: $(this).serialize(),
                     success: function (data)
                     {
+                        data = {
+                            type: "success",
+                            message: "Hemos recibido su mensaje, muchas gracias!"
+                        }
+                        
                         var messageAlert = 'alert-' + data.type;
                         var messageText = data.message;
 
